@@ -1,0 +1,32 @@
+---
+title: "Old Faithful Geyser Duration by Waiting Time Prediction App User Manual"
+author: "Brooks Farmer"
+date: '2022-09-21'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Brief Description of Dataset
+
+The Faithful data set contains data about the Old Faithful geyser in Yellowstone National Park, Wyoming, USA. It includes 272 observations across the two variables waiting time and eruption duration both calculated in minutes. Please see the faithful data set R documentation for more information.
+
+
+## How to use this app
+
+- Step 1: Use the slider to select a waiting time between eruptions
+- Step 2: A red dot will appear on the prediction line in the graph to indict where your chosen time sits among the 272 observations
+- Step 3: The Duration prediction text output will display the predicted eruption duration based upon your selected waiting time input
+
+## About the code
+
+The predict function is the primary form of calculations done. The other function used was the base plot function including a line with a point that displays the input given. The slider min and max was determined based in the min and max of the the waiting variables in the faithful data set. See next slide for a summary of the data.
+
+## Faithful data set summary
+
+```{r pressure}
+summary(faithful)
+```
+
